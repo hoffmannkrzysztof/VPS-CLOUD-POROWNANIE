@@ -53,3 +53,32 @@ Hosted by Vodafone UK
 | gc-cloud-west2 | 2426.27 |1006.11  |
 | ovh-private-hostl-fr | 490.25 | 157.77 |
 | ovh-public-c27-waw | 225.93 | 113.27 |
+
+
+## DD TEST
+Każdy test z użyciem dd uruchamiany był 5razy. Wybrany został najlepszy wynik. 
+
+
+**CPU TEST**
+__dd if=/dev/zero bs=1M count=1024__
+
+| X  | Time (s)  | Speed (MB/s) |
+| ------------- | ------------- | ------------- |
+| do-cloud-fra1  | 2.5641  | 419 |
+| dome-vps-olsztyn  | 2.65952 | 404 |
+| gc-cloud-west2 |2.26019  |475  |
+| ovh-private-hostl-fr | 2,76387 | 388 |
+| ovh-public-c27-waw | 2.03049 | 529 |
+
+
+
+**IO TEST**
+__dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync__
+
+| X  | Time  | Speed (MB/s) |
+| ------------- | ------------- | ------------- |
+| do-cloud-fra1  | 1.3962  | 769 |
+| dome-vps-olsztyn  | 0.448955 | 2400 |
+| gc-cloud-west2 | 7.76907  |138  |
+| ovh-private-hostl-fr | 13,0323 | 82,4 |
+| ovh-public-c27-waw | 2.64323 | 406 |
