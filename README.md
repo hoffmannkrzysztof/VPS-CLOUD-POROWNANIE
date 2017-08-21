@@ -1,11 +1,11 @@
 # VPS-CLOUD-POROWNANIE
 
 
-SPEEDTEST
+## SPEEDTEST
 
 Każdy test wykonywany był 5 razy. Najlepszy wynik znajduje się w tableli.
 
-**WAW_ORANGE
+**WAW_ORANGE**
 
 Hosted by Orange Polska S.A. (Warsaw)
 
@@ -17,7 +17,7 @@ Hosted by Orange Polska S.A. (Warsaw)
 | ovh-private-hostl-fr | 258.13 | 475.60 |
 | ovh-public-c27-waw | 243.19 | 239.20 |
 
-**WAW_NETIA
+**WAW_NETIA**
 
 Hosted by NETIA S.A. (Warsaw)
 
@@ -27,10 +27,10 @@ Hosted by NETIA S.A. (Warsaw)
 | dome-vps-olsztyn  | 35.33  | 332.09 |
 | gc-cloud-west2 | 2234.37 | 432.77 |
 | ovh-private-hostl-fr | 307.58 | 349.02 |
-| ovh-public-c27-waw | 0 | 0 |
+| ovh-public-c27-waw | 244.34 | 231.84 |
 
 
-**PARIS
+**PARIS**
 
 Hosted by Orange (Paris)
 
@@ -42,7 +42,7 @@ Hosted by Orange (Paris)
 | ovh-private-hostl-fr |880.23 | 432.72 |
 | ovh-public-c27-waw | 237.04 | 21.13 |
 
-**LONDON
+**LONDON**
 
 Hosted by Vodafone UK
 
