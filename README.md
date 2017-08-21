@@ -1,5 +1,13 @@
 # VPS-CLOUD-POROWNANIE
 
+| X  | do-cloud-fra1  | dome-vps-olsztyn | gc-cloud-west2  | ovh-private-hostl-fr  | ovh-public-c27-waw |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| vCPU  | 2  | 2 | 2  | 1  | 2 |
+| Pamięć (GB)  | 4  | 8 | 7,5  | 8  | 7 |
+| Przestrzeń podstawowa  | 60GB SSD  | 50GB SSD | 50GB SSD  | 50GB NFS  | 50GB SSD |
+| Transfer  | 4TB  | X | 0  | ∞  | ∞ |
+| Cena mc  | 40$  | X | 72,75$  | X  | 128 zł netto |
+
 
 ## SPEEDTEST
 
