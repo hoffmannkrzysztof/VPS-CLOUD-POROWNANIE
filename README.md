@@ -6,6 +6,8 @@
 | Pamięć (GB)  | 4  | 8 | 7,5  | 8  | 7 |
 | Przestrzeń podstawowa  | 60GB SSD  | 50GB SSD | 50GB SSD  | 50GB NFS  | 50GB SSD |
 | Transfer  | 4TB  | X | 0  | ∞  | ∞ |
+| Lokalizacja | Franfurkt | Olsztyn | Londyn | Paryż | Warszwa |
+| Nazwa usługi | DO40$ | X | n1-standard-2 | PrivateCloud-L | C2-7 |
 | Cena mc  | 40$  | X | 72,75$  | X  | 128 zł netto |
 
 
