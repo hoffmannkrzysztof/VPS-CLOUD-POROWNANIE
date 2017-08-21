@@ -60,6 +60,7 @@ Każdy test z użyciem dd uruchamiany był 5razy. Wybrany został najlepszy wyni
 
 
 **CPU TEST**
+
 __dd if=/dev/zero bs=1M count=1024__
 
 | X  | Time (s)  | Speed (MB/s) |
@@ -73,6 +74,7 @@ __dd if=/dev/zero bs=1M count=1024__
 
 
 **IO TEST**
+
 __dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync__
 
 | X  | Time  | Speed (MB/s) |
@@ -82,3 +84,44 @@ __dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync__
 | gc-cloud-west2 | 7.76907  |138  |
 | ovh-private-hostl-fr | 13,0323 | 82,4 |
 | ovh-public-c27-waw | 2.64323 | 406 |
+
+
+## SYSBENCH TEST
+Każdy test z użyciem dd uruchamiany był 5razy. Wybrany został najlepszy wynik. 
+
+**CPU TEST**
+
+__sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run__
+
+| X  | Execution time (s) |
+| ------------- | ------------- 
+| do-cloud-fra1  | 39.5404  | 
+| dome-vps-olsztyn  | 30.5059 |
+| gc-cloud-west2 | 0  |
+| ovh-private-hostl-fr | 24.8364 |
+| ovh-public-c27-waw | 25.1818 |
+
+
+**sysbench memory random read**
+
+_sysbench --test=memory --memory-access-mode=rnd --memory-oper=read --num-threads=1 run_
+
+| X  | Execution time (s) |
+| ------------- | ------------- 
+| do-cloud-fra1  | 61.8275  | 
+| dome-vps-olsztyn  | 17.7095 |
+| gc-cloud-west2 | 0  |
+| ovh-private-hostl-fr | 35.5612 |
+| ovh-public-c27-waw | 16.4526 |
+
+**sysbench memory random write**
+
+_sysbench --test=memory --memory-access-mode=rnd --memory-oper=write --num-threads=1 run_
+
+| X  | Execution time (s) |
+| ------------- | ------------- 
+| do-cloud-fra1  | 62.0462  | 
+| dome-vps-olsztyn  | 20.7168 |
+| gc-cloud-west2 | 0  |
+| ovh-private-hostl-fr | 38.2247 |
+| ovh-public-c27-waw | 17.6945 |
