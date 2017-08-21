@@ -135,3 +135,5 @@ _sysbench --test=memory --memory-access-mode=rnd --memory-oper=write --num-threa
 | gc-cloud-west2 | 0  |
 | ovh-private-hostl-fr | 38.2247 |
 | ovh-public-c27-waw | 17.6945 |
+
+Logi dostępne w folderze
