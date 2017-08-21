@@ -1,0 +1,348 @@
+gcc -o pgms/arithoh -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Darithoh src/arith.c 
+gcc -o pgms/register -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum='register int' src/arith.c 
+gcc -o pgms/short -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=short src/arith.c 
+gcc -o pgms/int -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=int src/arith.c 
+gcc -o pgms/long -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=long src/arith.c 
+gcc -o pgms/float -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=float src/arith.c 
+gcc -o pgms/double -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=double src/arith.c 
+gcc -o pgms/hanoi -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/hanoi.c 
+gcc -o pgms/syscall -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/syscall.c 
+gcc -o pgms/context1 -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/context1.c 
+gcc -o pgms/pipe -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/pipe.c 
+gcc -o pgms/spawn -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/spawn.c 
+gcc -o pgms/execl -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/execl.c 
+gcc -o pgms/dhry2 -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -DHZ= ./src/dhry_1.c ./src/dhry_2.c
+gcc -o pgms/dhry2reg -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -DHZ= -DREG=register ./src/dhry_1.c ./src/dhry_2.c
+gcc -o pgms/looper -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/looper.c 
+gcc -o pgms/fstime -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/fstime.c 
+gcc -o pgms/whetstone-double -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -DDP -DGTODay -DUNIXBENCH src/whets.c -lm
+make all
+make[1]: Entering directory '/tmp/byte-unixbench-master/UnixBench'
+make distr
+make[2]: Entering directory '/tmp/byte-unixbench-master/UnixBench'
+Checking distribution of files
+./pgms  exists
+./src  exists
+./testdir  exists
+make[2]: Leaving directory '/tmp/byte-unixbench-master/UnixBench'
+make programs
+make[2]: Entering directory '/tmp/byte-unixbench-master/UnixBench'
+make[2]: Nothing to be done for 'programs'.
+make[2]: Leaving directory '/tmp/byte-unixbench-master/UnixBench'
+make[1]: Leaving directory '/tmp/byte-unixbench-master/UnixBench'
+
+   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+
+   Version 5.1.3                      Based on the Byte Magazine Unix Benchmark
+
+   Multi-CPU version                  Version 5 revisions by Ian Smith,
+                                      Sunnyvale, CA, USA
+   January 13, 2011                   johantheghost at yahoo period com
+
+
+1 x Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+1 x Double-Precision Whetstone  1 2 3 4 5 6 7 8 9 10
+
+1 x Execl Throughput  1 2 3
+
+1 x File Copy 1024 bufsize 2000 maxblocks  1 2 3
+
+1 x File Copy 256 bufsize 500 maxblocks  1 2 3
+
+1 x File Copy 4096 bufsize 8000 maxblocks  1 2 3
+
+1 x Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+1 x Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+1 x Process Creation  1 2 3
+
+1 x System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+1 x Shell Scripts (1 concurrent)  1 2 3
+
+1 x Shell Scripts (8 concurrent)  1 2 3
+
+2 x Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+2 x Double-Precision Whetstone  1 2 3 4 5 6 7 8 9 10
+
+2 x Execl Throughput  1 2 3
+
+2 x File Copy 1024 bufsize 2000 maxblocks  1 2 3
+
+2 x File Copy 256 bufsize 500 maxblocks  1 2 3
+
+2 x File Copy 4096 bufsize 8000 maxblocks  1 2 3
+
+2 x Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+2 x Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+2 x Process Creation  1 2 3
+
+2 x System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+2 x Shell Scripts (1 concurrent)  1 2 3
+
+2 x Shell Scripts (8 concurrent)  1 2 3
+
+========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: serwer-1: GNU/Linux
+   OS: GNU/Linux -- 4.9.0-3-amd64 -- #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26)
+   Machine: x86_64 (unknown)
+   Language: en_US.utf8 (charmap="UTF-8", collate="UTF-8")
+   CPU 0: Intel Core Processor (Haswell, no TSX) (6200.0 bogomips)
+          x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET
+   CPU 1: Intel Core Processor (Haswell, no TSX) (6200.0 bogomips)
+          x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET
+   09:35:03 up 1 day, 15:06,  2 users,  load average: 0.09, 0.08, 0.06; runlevel 2017-08-08
+
+------------------------------------------------------------------------
+Benchmark Run: Thu Aug 10 2017 09:35:03 - 10:03:16
+2 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       37105079.8 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     4486.0 MWIPS (10.7 s, 7 samples)
+Execl Throughput                               3853.2 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks       1260913.3 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          342747.0 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       3692965.5 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             2750842.8 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 440275.5 lps   (10.0 s, 7 samples)
+Process Creation                               8969.5 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                  10365.1 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   2196.8 lpm   (60.0 s, 2 samples)
+System Call Overhead                        3712560.5 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   37105079.8   3179.5
+Double-Precision Whetstone                       55.0       4486.0    815.6
+Execl Throughput                                 43.0       3853.2    896.1
+File Copy 1024 bufsize 2000 maxblocks          3960.0    1260913.3   3184.1
+File Copy 256 bufsize 500 maxblocks            1655.0     342747.0   2071.0
+File Copy 4096 bufsize 8000 maxblocks          5800.0    3692965.5   6367.2
+Pipe Throughput                               12440.0    2750842.8   2211.3
+Pipe-based Context Switching                   4000.0     440275.5   1100.7
+Process Creation                                126.0       8969.5    711.9
+Shell Scripts (1 concurrent)                     42.4      10365.1   2444.6
+Shell Scripts (8 concurrent)                      6.0       2196.8   3661.4
+System Call Overhead                          15000.0    3712560.5   2475.0
+                                                                   ========
+System Benchmarks Index Score                                        1985.1
+
+------------------------------------------------------------------------
+Benchmark Run: Thu Aug 10 2017 10:03:16 - 10:31:33
+2 CPUs in system; running 2 parallel copies of tests
+
+Dhrystone 2 using register variables       71360775.6 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     9139.4 MWIPS (10.2 s, 7 samples)
+Execl Throughput                               8790.0 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        976258.0 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          265860.0 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       2929233.6 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             5317332.6 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 924274.3 lps   (10.0 s, 7 samples)
+Process Creation                              19974.7 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                  16502.9 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   2244.0 lpm   (60.0 s, 2 samples)
+System Call Overhead                        4667757.1 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   71360775.6   6114.9
+Double-Precision Whetstone                       55.0       9139.4   1661.7
+Execl Throughput                                 43.0       8790.0   2044.2
+File Copy 1024 bufsize 2000 maxblocks          3960.0     976258.0   2465.3
+File Copy 256 bufsize 500 maxblocks            1655.0     265860.0   1606.4
+File Copy 4096 bufsize 8000 maxblocks          5800.0    2929233.6   5050.4
+Pipe Throughput                               12440.0    5317332.6   4274.4
+Pipe-based Context Switching                   4000.0     924274.3   2310.7
+Process Creation                                126.0      19974.7   1585.3
+Shell Scripts (1 concurrent)                     42.4      16502.9   3892.2
+Shell Scripts (8 concurrent)                      6.0       2244.0   3739.9
+System Call Overhead                          15000.0    4667757.1   3111.8
+                                                                   ========
+System Benchmarks Index Score                                        2856.1
+
+gcc -o pgms/arithoh -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Darithoh src/arith.c 
+gcc -o pgms/register -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum='register int' src/arith.c 
+gcc -o pgms/short -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=short src/arith.c 
+gcc -o pgms/int -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=int src/arith.c 
+gcc -o pgms/long -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=long src/arith.c 
+gcc -o pgms/float -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=float src/arith.c 
+gcc -o pgms/double -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -Ddatum=double src/arith.c 
+gcc -o pgms/hanoi -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/hanoi.c 
+gcc -o pgms/syscall -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/syscall.c 
+gcc -o pgms/context1 -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/context1.c 
+gcc -o pgms/pipe -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/pipe.c 
+gcc -o pgms/spawn -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/spawn.c 
+gcc -o pgms/execl -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/execl.c 
+gcc -o pgms/dhry2 -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -DHZ= ./src/dhry_1.c ./src/dhry_2.c
+gcc -o pgms/dhry2reg -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -DHZ= -DREG=register ./src/dhry_1.c ./src/dhry_2.c
+gcc -o pgms/looper -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/looper.c 
+gcc -o pgms/fstime -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME src/fstime.c 
+gcc -o pgms/whetstone-double -Wall -pedantic -O3 -ffast-math -march=native -mtune=native -I ./src -DTIME -DDP -DGTODay -DUNIXBENCH src/whets.c -lm
+make all
+make[1]: Entering directory '/tmp/byte-unixbench-master/UnixBench'
+make distr
+make[2]: Entering directory '/tmp/byte-unixbench-master/UnixBench'
+Checking distribution of files
+./pgms  exists
+./src  exists
+./testdir  exists
+make[2]: Leaving directory '/tmp/byte-unixbench-master/UnixBench'
+make programs
+make[2]: Entering directory '/tmp/byte-unixbench-master/UnixBench'
+make[2]: Nothing to be done for 'programs'.
+make[2]: Leaving directory '/tmp/byte-unixbench-master/UnixBench'
+make[1]: Leaving directory '/tmp/byte-unixbench-master/UnixBench'
+
+   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+
+   Version 5.1.3                      Based on the Byte Magazine Unix Benchmark
+
+   Multi-CPU version                  Version 5 revisions by Ian Smith,
+                                      Sunnyvale, CA, USA
+   January 13, 2011                   johantheghost at yahoo period com
+
+
+1 x Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+1 x Double-Precision Whetstone  1 2 3 4 5 6 7 8 9 10
+
+1 x Execl Throughput  1 2 3
+
+1 x File Copy 1024 bufsize 2000 maxblocks  1 2 3
+
+1 x File Copy 256 bufsize 500 maxblocks  1 2 3
+
+1 x File Copy 4096 bufsize 8000 maxblocks  1 2 3
+
+1 x Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+1 x Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+1 x Process Creation  1 2 3
+
+1 x System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+1 x Shell Scripts (1 concurrent)  1 2 3
+
+1 x Shell Scripts (8 concurrent)  1 2 3
+
+2 x Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+2 x Double-Precision Whetstone  1 2 3 4 5 6 7 8 9 10
+
+2 x Execl Throughput  1 2 3
+
+2 x File Copy 1024 bufsize 2000 maxblocks  1 2 3
+
+2 x File Copy 256 bufsize 500 maxblocks  1 2 3
+
+2 x File Copy 4096 bufsize 8000 maxblocks  1 2 3
+
+2 x Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+2 x Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+2 x Process Creation  1 2 3
+
+2 x System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+2 x Shell Scripts (1 concurrent)  1 2 3
+
+2 x Shell Scripts (8 concurrent)  1 2 3
+
+========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.3)
+
+   System: serwer-1: GNU/Linux
+   OS: GNU/Linux -- 4.9.0-3-amd64 -- #1 SMP Debian 4.9.30-2+deb9u2 (2017-06-26)
+   Machine: x86_64 (unknown)
+   Language: en_US.utf8 (charmap="UTF-8", collate="UTF-8")
+   CPU 0: Intel Core Processor (Haswell, no TSX) (6200.0 bogomips)
+          x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET
+   CPU 1: Intel Core Processor (Haswell, no TSX) (6200.0 bogomips)
+          x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET
+   14:08:17 up 1 day, 19:40,  2 users,  load average: 0.05, 0.10, 0.44; runlevel 2017-08-08
+
+------------------------------------------------------------------------
+Benchmark Run: Thu Aug 10 2017 14:08:17 - 14:36:29
+2 CPUs in system; running 1 parallel copy of tests
+
+Dhrystone 2 using register variables       36638028.0 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     4483.5 MWIPS (10.7 s, 7 samples)
+Execl Throughput                               3871.7 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks       1255792.6 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          342393.3 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       3586567.5 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             2718377.2 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 382329.5 lps   (10.0 s, 7 samples)
+Process Creation                               8698.2 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   8956.3 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   2188.9 lpm   (60.0 s, 2 samples)
+System Call Overhead                        3684112.5 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   36638028.0   3139.5
+Double-Precision Whetstone                       55.0       4483.5    815.2
+Execl Throughput                                 43.0       3871.7    900.4
+File Copy 1024 bufsize 2000 maxblocks          3960.0    1255792.6   3171.2
+File Copy 256 bufsize 500 maxblocks            1655.0     342393.3   2068.8
+File Copy 4096 bufsize 8000 maxblocks          5800.0    3586567.5   6183.7
+Pipe Throughput                               12440.0    2718377.2   2185.2
+Pipe-based Context Switching                   4000.0     382329.5    955.8
+Process Creation                                126.0       8698.2    690.3
+Shell Scripts (1 concurrent)                     42.4       8956.3   2112.3
+Shell Scripts (8 concurrent)                      6.0       2188.9   3648.2
+System Call Overhead                          15000.0    3684112.5   2456.1
+                                                                   ========
+System Benchmarks Index Score                                        1922.6
+
+------------------------------------------------------------------------
+Benchmark Run: Thu Aug 10 2017 14:36:29 - 15:04:46
+2 CPUs in system; running 2 parallel copies of tests
+
+Dhrystone 2 using register variables       70863366.1 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     8997.0 MWIPS (10.1 s, 7 samples)
+Execl Throughput                               8810.9 lps   (29.8 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks        908194.9 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          258710.2 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       2720057.2 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             5172239.9 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 924112.4 lps   (10.0 s, 7 samples)
+Process Creation                              16381.5 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                  15999.7 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   2268.4 lpm   (60.0 s, 2 samples)
+System Call Overhead                        4375648.8 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   70863366.1   6072.3
+Double-Precision Whetstone                       55.0       8997.0   1635.8
+Execl Throughput                                 43.0       8810.9   2049.1
+File Copy 1024 bufsize 2000 maxblocks          3960.0     908194.9   2293.4
+File Copy 256 bufsize 500 maxblocks            1655.0     258710.2   1563.2
+File Copy 4096 bufsize 8000 maxblocks          5800.0    2720057.2   4689.8
+Pipe Throughput                               12440.0    5172239.9   4157.7
+Pipe-based Context Switching                   4000.0     924112.4   2310.3
+Process Creation                                126.0      16381.5   1300.1
+Shell Scripts (1 concurrent)                     42.4      15999.7   3773.5
+Shell Scripts (8 concurrent)                      6.0       2268.4   3780.6
+System Call Overhead                          15000.0    4375648.8   2917.1
+                                                                   ========
+System Benchmarks Index Score                                        2738.4
+
